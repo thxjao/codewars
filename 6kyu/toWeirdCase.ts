@@ -1,5 +1,4 @@
-function toWeirdCase(string){
-
+export const toWeirdCase  = (string) => {
     const dividedWords = string.split(' ');
 
     const formattedWords = dividedWords.map((word) => {
@@ -16,6 +15,7 @@ function toWeirdCase(string){
 
     return unifiedWords
 }
+
 
 console.log(toWeirdCase("Weird string case"))
 
