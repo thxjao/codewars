@@ -1,6 +1,5 @@
 import {toWeirdCase} from '../toWeirdCase'
 
-
 describe('toWeirdCase', () => {
     it('should return the correct value for a single word', function(){
       const formattedWord = toWeirdCase('This')
