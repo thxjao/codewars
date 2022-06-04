@@ -1,17 +1,18 @@
-export const toWeirdCase  = (string) => {
-    const dividedWords = string.split(' ');
+export const toWeirdCase  = (word: string) => {
+    const dividedWords = word.split(' ');
 
     const formattedWords = dividedWords.map((word) => {
-        return word.split('').map((letter, index)  => {
+        return [...word].map((letter, index)  => {
             if (++index % 2 === 0) {
                 return letter.toLowerCase()
             } else {
                 return letter.toUpperCase()
             }
+            
         }).join('')
     })
     
-    const unifiedWords = formattedWords.join(' ')
+    const unifiedWords: string = formattedWords.join(' ')
 
     return unifiedWords
 }
